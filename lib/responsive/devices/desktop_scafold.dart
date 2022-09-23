@@ -21,6 +21,7 @@ class _DesktopScafoldState extends State<DesktopScafold> {
         children: [
           drawer,
           Expanded(
+            flex: 2,
             child: Column(
               children: [
                 AspectRatio(
@@ -44,6 +45,17 @@ class _DesktopScafoldState extends State<DesktopScafold> {
                     itemBuilder: (context, builder) {
                       return TitleCard();
                     },
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                Expanded(
+                  child: Container(
+                    color: Colors.pink,
                   ),
                 ),
               ],
